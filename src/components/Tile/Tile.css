@@ -14,3 +14,17 @@
 .tile img{
 width: 75px;
 }
+
+.chess-piece{
+width: 100px;
+height: 100px;
+background-size: 75px;
+background-position: center;
+background-repeat: no-repeat;
+}
+.chess-piece:hover{
+   cursor: grab;
+}
+.chess-piece:active{
+   cursor: grabbing;
+}
