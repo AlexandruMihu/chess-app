@@ -7,13 +7,3 @@
     grid-template-rows: repeat(8,100px);
 }
 
-#chessboard .tile{
-    width: 100px;
-    height: 100px;
-}
-#chessboard .dark-tile{
-   background-color: peru;
-}
-#chessboard .light-tile{
-   background-color: antiquewhite;
-}

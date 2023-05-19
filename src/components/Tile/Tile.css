@@ -1,0 +1,16 @@
+ .tile{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+}
+ .dark-tile{
+   background-color: peru;
+}
+ .light-tile{
+   background-color: antiquewhite;
+}
+
+.tile img{
+width: 75px;
+}
