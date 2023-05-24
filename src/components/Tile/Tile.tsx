@@ -5,19 +5,15 @@ interface Props {
     numar: number;
 }
 
+
 export default function Tile({ numar, image }: Props) {
-    if (numar % 2 === 0) {
-        return <div className='tile dark-tile'>
-           {image && <div style={{ backgroundImage: `url(${image})` }} className='chess-piece'>
-
-            </div>}
-
-        </div>
-    } else {
-        return <div className='tile light-tile'>
-            {image && <div style={{ backgroundImage: `url(${image})` }} className='chess-piece'>
-
-            </div>}
-        </div>
-    }
-}
+    const isDarkTile = numar % 2 === 0;
+    const tileClassName = isDarkTile ? 'tile dark-tile' : 'tile light-tile';
+    const pieceClassName = 'chess-piece';
+  
+    return (
+      <div className={tileClassName}>
+        {image && <div className={pieceClassName} style={{ backgroundImage: `url(${image})` }} />}
+      </div>
+    );
+  }
